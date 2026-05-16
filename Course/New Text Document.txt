@@ -1,0 +1,141 @@
+node --version
+ 
+npm create vite@latest
+ 
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+Note: You can choose any other idea, or edit idea
+
+Admin Dashboard is optional ( based on time )
+
+### **1. Restaurant Online Menu & Order System**
+
+**Features:**
+
+- Menu with categories (starters, mains, desserts, drinks).
+- Add to cart, place orders, and view order history.
+- Admin panel for menu management and order tracking.
+
+**Tech focus:** CRUD, orders, MongoDB relations.
+
+### **2. Guesthouse / Hotel Booking System**
+
+**Features:**
+
+- View guesthouses by city, price, and facilities.
+- Booking form with date range and total price calculation.
+- Admin dashboard to manage listings and reservations.
+    
+    **Tech focus:** booking logic, date validation, pricing system.
+    
+
+### **3. Travel Planner & Booking Website**
+
+**Features:**
+
+- Browse destinations and packages.
+- Book trips.
+- Admin adds or edits packages.
+    
+    **Tech focus:** CRUD with relations, filtering.
+    
+
+### **4. Fitness Gym / Class Booking System**
+
+**Features:**
+
+- List available sessions (yoga, pilates, spinning, etc.).
+- Book a class, see schedule, and limit bookings by capacity.
+- Admin can add new sessions and view reservations.
+    
+    **Tech focus:** scheduling, time slot logic, booking capacity control.
+    
+
+### **5. Appointment Booking System (Specify type: Clinic, Salon…)**
+
+**Features:**
+
+- Choose service, date, and time.
+- Prevent double bookings automatically.
+- Admin manages time slots, services, and appointments.
+    
+    **Tech focus:** booking logic , time validation, admin CRUD.
+    
+
+### **6. Inventory / Stock Management System**
+
+**Features:**
+
+- Add/edit products, suppliers, and stock quantities.
+- Low-stock alerts and daily/weekly reports.
+
+**Tech focus:** reporting, data aggregation.
+
+### **7. Course Catalog & Enrollment System**
+
+**Features:**
+
+- Display available courses with duration, price, and description.
+- Enroll via a simple form.
+- Admin can add, edit, and remove courses.
+    
+    **Tech focus:** CRUD operations, enrollment form handling.
+    
+
+### **8. Vehicle Rental Management System**
+
+**Features:**
+
+- Show cars/bikes available for rent with price/day.
+- Book by pickup/drop-off dates, auto-calculate total.
+- Admin manages vehicles and reservations.
+    
+    **Tech focus:** date calculations, availability logic, MongoDB relations.
+    
+
+### **9. E-commerce Store (Any Product Type)**
+
+**Features:**
+
+- Product catalog with categories, price filters, and search.
+- Cart and checkout flow.
+- Admin can add/update/delete products and manage orders.
+- Optional: order status tracking, discounts, or coupon codes.
+    
+    **Tech focus:** authentication, CRUD, cart logic, order API integration.
+    
+
+### **10. Event Management Platform**
+
+**Features:**
+
+- Create, update, and delete events with descriptions and images.
+- Filter events by category (music, business, education...).
+- View event details with location map and share options.
+- RSVP system to accept or decline attendance.
+- Dashboard for organizers to track attendees and feedback.
+
+**Tech focus:** event CRUD operations, RSVP logic, Google Maps integration.
+
+### **11. Custom Printing & Personalization Platform**
+
+**Features:**
+
+- Display customizable products (e.g., mugs, t-shirts, phone cases, tote bags).
+- Live preview where users can add text, names, or short expressions.
+- Choose print placement (front, back, sleeve, etc.) and color options.
+- Optional: Upload image or logo for personal printing, admin dashboard to manage products, designs, and orders.
+
+**Tech focus:** image/text overlay logic, product customization preview, order management system.
+
+### **12. NGO Project Management System**
+
+**Features:**
+
+- NGOs can post projects with goals, budgets, and deadlines.
+- Volunteers can apply to help or contribute time and skills.
+- Donors can apply to contribute funds to support specific projects.
+- Admin dashboard to manage projects, volunteers, and donations.
+
+**Tech focus:** project tracking, dual-role access (volunteer/donor).
+ 
