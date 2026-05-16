@@ -1,0 +1,141 @@
+.contact-page {
+  background-color: #fffaf0;
+  min-height: 100vh;
+}
+
+.contact-hero {
+  text-align: center;
+  padding: 70px 20px 40px;
+  background: linear-gradient(to bottom, #1f4d2b, #2f6b3f);
+  color: #fffaf0;
+}
+
+.contact-hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.contact-hero p {
+  color: #f1d9a5;
+  font-size: 18px;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+}
+
+.contact-info,
+.contact-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(45, 79, 43, 0.15);
+}
+
+.contact-info h2,
+.contact-form h2 {
+  color: #1f4d2b;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+.social-links a {
+  background-color: #2f6b3f;
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #d98c3f;
+}
+
+.map-box {
+  margin-top: 25px;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 260px;
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 13px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #2f6b3f;
+}
+
+.contact-form button {
+  background-color: #2f6b3f;
+  color: white;
+  border: none;
+  padding: 13px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #d98c3f;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-hero h1 {
+    font-size: 34px;
+  }
+}
+
+.success-message {
+  background-color: #e6f4ea;
+  color: #1f4d2b;
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}

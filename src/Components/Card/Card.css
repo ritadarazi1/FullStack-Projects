@@ -1,0 +1,93 @@
+.card {
+  width: 300px;
+  background-color: #fffaf0;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(45, 79, 43, 0.18);
+  margin-top: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(45, 79, 43, 0.28);
+}
+
+.card-img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.card-content {
+  text-align: center;
+  padding: 22px;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 22px;
+  color: #1f4d2b;
+  margin-bottom: 10px;
+}
+
+.card-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4a4a4a;
+  margin-bottom: 18px;
+}
+
+.card-btn {
+  background-color: #2f6b3f;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 22px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-btn:hover {
+  background-color: #d98c3f;
+  transform: scale(1.05);
+}
+
+.card-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d98c3f;
+  margin-bottom: 10px;
+}
+
+.card-availability {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-availability.available {
+  color: #2f6b3f;
+}
+
+.card-availability.full {
+  color: #b02a2a;
+}
+
+/* Disabled card look */
+.card.disabled {
+  opacity: 0.7;
+}
+
+.card-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
