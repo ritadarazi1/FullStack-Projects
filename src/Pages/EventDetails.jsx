@@ -1,20 +1,12 @@
 import './EventDetails.css';
-import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Header from '../Components/Header/Header';
 import Footer from '../Components/Footer/Footer';
 import events from '../Data/Events';
-import { getCart, getRegisteredCount, isEventFullyBooked } from '../Utils/RegistrationUtils';
 
 function EventDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
-
-  const [cart, setCart] = useState([]);
-
-  useEffect(() => {
-    setCart(getCart());
-  }, []);
 
   const event = events.find((item) => item.id === Number(id));
 
@@ -27,9 +19,6 @@ function EventDetails() {
       </>
     );
   }
-
-  const registeredCount = getRegisteredCount(cart, event.id);
-  const fullyBooked = isEventFullyBooked(cart, event.id, event.maxParticipants);
 
   return (
     <>
@@ -49,15 +38,15 @@ function EventDetails() {
           <p><strong>Duration:</strong> {event.eventDuration}</p>
           <p><strong>Difficulty:</strong> {event.difficulty}</p>
           <p><strong>Price:</strong> ${event.price}</p>
-          <p><strong>Registered:</strong> {registeredCount} / {event.maxParticipants}</p>
-          <p><strong>Status:</strong> {fullyBooked ? 'Fully Booked' : 'Available'}</p>
+
+          {/* ✅ TEMP FIX: Always show available (until we connect localStorage logic) */}
+          <p><strong>Status:</strong> Available</p>
 
           <button
             className="book-btn"
-            disabled={fullyBooked}
             onClick={() => navigate(`/register/${event.id}`)}
           >
-            {fullyBooked ? 'Fully Booked' : 'Register Now'}
+            Register Now
           </button>
         </div>
       </div>
