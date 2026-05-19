@@ -30,7 +30,10 @@ function Home() {
 
         <div className="cards-container">
           {filteredEvents.map((event) => {
-            const registeredCount = getRegisteredCount(cart, event.id);
+            const registeredCount = Math.min(
+  getRegisteredCount(cart, event.id),
+  event.maxParticipants
+);
             const isFullyBooked = registeredCount >= event.maxParticipants;
 
             return (

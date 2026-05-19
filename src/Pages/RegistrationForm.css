@@ -101,3 +101,12 @@
   padding: 60px;
   color: #1f4d2b;
 }
+
+.form-error {
+  background-color: #ffe5e5;
+  color: #a32020;
+  padding: 12px 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}

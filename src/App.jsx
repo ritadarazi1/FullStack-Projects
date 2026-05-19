@@ -15,8 +15,8 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contactus" element={<ContactUs />} />
-        <Route path="/event/:id" element={<EventDetails />} />
         <Route path="/register/:id" element={<RegistrationForm />} />
+        <Route path="/event/:id" element={<EventDetails />} />
       </Routes>
     </BrowserRouter>
   );
